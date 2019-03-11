@@ -1,7 +1,12 @@
 SFTP Inbound Channel Adapter: from remote to local
-Its alistener that will connect to the server and listen for the remote directory events 
+Its alistener that will connect to the server and lhttps://github.com/surendrachereddy/Notes/blob/master/sftpisten for the remote directory events 
 (e.g., new file created) at which point it will initiate a file transfer.
 https://docs.spring.io/autorepo/docs/spring-integration/4.2.0.M1/reference/html/sftp.html
 
 Triggers
 https://stackoverflow.com/questions/11563469/spring-integration-cron-quartz-in-cluster/11564543#11564543
+
+
+
+Spring-integration-sftp-spring-boot
+https://github.com/prp28/spring-integration-sftp-spring-boot
