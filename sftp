@@ -1,0 +1,4 @@
+SFTP Inbound Channel Adapter: from remote to local
+Its alistener that will connect to the server and listen for the remote directory events 
+(e.g., new file created) at which point it will initiate a file transfer.
+https://docs.spring.io/autorepo/docs/spring-integration/4.2.0.M1/reference/html/sftp.html
