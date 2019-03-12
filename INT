@@ -1,0 +1,53 @@
+Message:
+
+org.springframework.integration.Message interface defines the spring Message: 
+the unit of data transfer within a Spring Integration context
+
+public interface Message<T> {
+    T getPayload();
+    MessageHeaders getHeaders();
+}
+
+It defines accessors to two key elements:
+1.Message headers, essentially a key-value container that can be used to transmit metadata
+2.The message payload, which is the actual data that is of value to be transferred
+
+Channel:
+It’s the pipe by which messages are relayed from one system to another
+1.Point-to-Point (P2P) channels:
+    1-to-1 communication 
+          @Bean
+          public MessageChannel fileChannel1() {
+              return new DirectChannel();
+          }
+2.Publish-Subscribe (Pub-Sub):
+    1-to-many
+            @Bean
+        public MessageChannel pubSubFileChannel() {
+            return new PublishSubscribeChannel();
+        }
+        
+Bridge:
+        connect two message channels or adapters
+        P2P and Pub-Sub channels can’t be connected directly
+        so use bridge
+        @Bean
+        @BridgeFrom(value = "pubSubFileChannel")
+        public MessageChannel fileChannel1() {
+            return new DirectChannel();
+        }
+        
+Service Activator:
+
+execute any method on our POJO when a message is received from an inbound channel, 
+and it allows us to write messages to an outward channel.
+
+
+Adaptor:
+    plug-in to a system or data source.
+    Adapters fall into two broad categories — inbound and outbound.
+    Inbound adapters:bring in messages from the external system 
+    poller: a component which helps the adapter poll the configured folder at the specified interval
+    Outbound adapters:send messages outwards
+
+
