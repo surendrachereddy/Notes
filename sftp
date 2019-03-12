@@ -14,6 +14,7 @@ https://docs.spring.io/spring-integration/docs/2.1.0.M1/reference/html/sftp.html
 https://docs.spring.io/spring-integration/docs/3.0.0.M2/reference/html/ftp.html
 https://spring.io/projects/spring-integration
 https://www.baeldung.com/spring-integration
+https://github.com/ddubson/integration-and-messaging/tree/9857db1870b3401441ec8bb5ed32fa1ab1c50171
 
 FTP/SFTP Sprint integration
 https://github.com/oOAkiraOo/spring-integration-ftp/tree/master/src/main/java/ito/akira/edson
@@ -28,3 +29,4 @@ https://github.com/ankitggits/Exchange(Exchanging files between sftp and strorag
 FTP upload
 https://github.com/jzoric/spring_integration_ftp_example
 https://github.com/abdulmohsin/sitaFileAdapterTest
+https://github.com/kangjoshi/spring-integration-dsl-ftp/tree/master/src/main/java/com/example/ftp/config
