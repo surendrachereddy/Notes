@@ -6,26 +6,24 @@ https://docs.spring.io/autorepo/docs/spring-integration/4.2.0.M1/reference/html/
 Triggers
 https://stackoverflow.com/questions/11563469/spring-integration-cron-quartz-in-cluster/11564543#11564543
 
-
-
-Spring-integration-sftp-spring-boot
-https://github.com/prp28/spring-integration-sftp-spring-boot
-
-POC Sprint integration
-https://github.com/oOAkiraOo/spring-integration-ftp/tree/master/src/main/java/ito/akira/edson
-
 upload file via SFTP using Spring Integration
 https://stackoverflow.com/questions/43538445/citrus-framework-upload-file-via-sftp-using-spring-integration
 https://dzone.com/articles/spring-integration-sftp-upload-example-using-key-b
 https://stackoverflow.com/questions/41151569/spring-integration-sftp-example-with-spring-boot
+https://docs.spring.io/spring-integration/docs/2.1.0.M1/reference/html/sftp.html
+https://docs.spring.io/spring-integration/docs/3.0.0.M2/reference/html/ftp.html
+https://spring.io/projects/spring-integration
+
+FTP/SFTP Sprint integration
+https://github.com/oOAkiraOo/spring-integration-ftp/tree/master/src/main/java/ito/akira/edson
 
 SFTP Upload 
 https://github.com/pajikos/java-examples/tree/master/spring-sftp-upload-demo
 https://github.com/dandaluga/spring-integration-sftp/tree/222d8b89aab95635e21e0139e77cfa27ef2e782d
 https://github.com/XiaoHuarong/SpringIntegrationExamples
-
-Exchanging files between sftp and strorage using spring integration
-https://github.com/ankitggits/Exchange
+https://github.com/prp28/spring-integration-sftp-spring-boot
+https://github.com/ankitggits/Exchange(Exchanging files between sftp and strorage using spring integration)
 
 FTP upload
 https://github.com/jzoric/spring_integration_ftp_example
+https://github.com/abdulmohsin/sitaFileAdapterTest
