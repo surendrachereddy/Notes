@@ -1,0 +1,38 @@
+session factory configuration:
+DefaultFtpSessionFactory
+<bean id="ftpClientSessionFactory"
+  class="org.springframework.integration.ftp.session.DefaultFtpSessionFactory">
+  <property name="host" value="localhost"/>
+  <property name="port" value="21"/>
+  <property name="username" value="testuser"/>
+  <property name="password" value="testuser"/>
+</bean>
+
+
+Downloading files from the FTP server:
+
+1.Inbound adapters can be used to read the files from the server
+2.Following code uses FTP inbound adapter that downloads a file from a remote directory and makes it available for processing:
+
+<int-ftp:inbound-channel-adapter 
+  channel="ftpOutputChannel"
+  session-factory="ftpClientSessionFactory"
+  remote-directory="/"
+  local-directory="C:\\Chandan\\Projects\\siexample\\ftp\\ftplocalfolder"
+  auto-create-local-directory="true"
+  delete-remote-files="true"
+  filename-pattern="*.txt"
+  local-filename-generator-expression="#this.toLowerCase() + '.trns'">
+  <int:poller fixed-rate="1000"/>
+</int-ftp:inbound-channel-adapter> 
+
+Uploading files to the FTP server:
+1.Outbound adapters can be used to write files to the server
+  <int-ftp:outbound-channel-adapter channel="ftpOutputChannel"
+    remote-directory="/uploadfolder"
+    session-factory="ftpClientSessionFactory"
+    auto-create-directory="true">
+  </int-ftp:outbound-channel-adapter>
+
+
+FTP outbound gateway
