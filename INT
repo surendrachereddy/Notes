@@ -50,4 +50,7 @@ Adaptor:
     poller: a component which helps the adapter poll the configured folder at the specified interval
     Outbound adapters:send messages outwards
 
+Gateways:
+Messaging gateways is a mechanism to publish a contract that can be used by systems 
+without exposing the underlying messaging implementation
 
