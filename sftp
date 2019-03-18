@@ -3,6 +3,29 @@ Its alistener that will connect to the server and lhttps://github.com/surendrach
 (e.g., new file created) at which point it will initiate a file transfer.
 https://docs.spring.io/autorepo/docs/spring-integration/4.2.0.M1/reference/html/sftp.html
 
+
+
+Spring integration Spring Batch
+https://keyholesoftware.com/2017/07/10/using-spring-integration-in-conjunction-with-spring-batch
+https://www.technologies-ebusiness.com/langages/spring-batch-spring-integration-une-usine-de-batchs-a-moindre-cout
+https://www.youtube.com/watch?v=8tiqeV07XlI
+
+csv
+https://github.com/wbotelhos/spring-batch-database-flat-file/blob/master/src/main/resources/dbToCSVJob.xml
+
+Batch
+https://github.com/stivell/CADE2-ROADMAP-CR2/blob/master/TxSpringBatchDatabaseToCsv/src/main/resources/spring-batch-context.xml
+http://websystique.com/springbatch/spring-batch-read-from-mysql-database-and-write-to-a-csv-file/
+https://www.javacodegeeks.com/2017/10/spring-batch-csv-processing.html
+https://howtodoinjava.com/spring-batch/flatfileitemwriter-write-to-csv-file/
+https://github.com/manojb95/first-rep/blob/deb4220d1720e3981c5714e47fada8d75d3c4cce/DbToCsv/src/main/java/com/example/demo/Writer.java
+https://narayanatutorial.com/java-tutorial/java-opencsv/csv-file-writing-resultset
+https://examples.javacodegeeks.com/enterprise-java/spring/integration/spring-integration-database-polling-example/
+https://github.com/kishanjavatrainer/SpringBootBatchDbToCsv/tree/master/SpringBootBatchDbToCsv/src/main/java/com/infotech/batch
+
+Quartz
+https://github.com/elventear/quartz-scheduler/tree/master/distribution/src/main/assembly/root/docs/dbTables
+
 Triggers
 https://stackoverflow.com/questions/11563469/spring-integration-cron-quartz-in-cluster/11564543#11564543
 
