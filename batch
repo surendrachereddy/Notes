@@ -1,0 +1,25 @@
+Spring Batch: Retries Support
+Use case: Retry a job if it fails due to a transient problem(such as a network connectivity issue, or DB being down for a couple of minutes).
+
+Scheduler: Task Recovery
+Use case: Make sure that if a node executing a certain job goes down, the job is automatically repeated/re-started.
+
+Scheduler: Misfire Support
+Use case: Make sure that if all nodes go down and then after while at least one is back online, all of missed job executions(for particular jobs which are sensitive to misfires) are invoked.
+
+Scheduler: Work distribution
+Use case: Make sure that the tasks are getting distributed among nodes in the cluster. (This is important because after a certain point one node won't be able to handle all tasks).
+
+Scheduler: No single point of failure
+Use case: Make sure that if one node goes down, the scheduled tasks are still being executed by the rest of the nodes.
+
+Spring Integration Framework-SMB file transfer:
+Use case:It would be much more powerful to execute the batch job using Spring Integration and its numerous adapters. 
+For example, you can use a File Inbound Channel Adapter to monitor a directory in the file-system(JBOSS) and start the Batch Job as soon as the input file arrives. 
+
+Spring Batch Multi-threaded Step
+Use case: If we need to read and write 100000 records and we have a chunk size of 50000
+then the application will create 2 new threads with 50000 items to process for each one of them. 
+And only when the first thread of this 2 is terminate then the taskExecutor will destroy it and create a new one with the next 50000 items to process
+and keep going like that until the 100000 items be proceed. 
+But the maximum number of thread executed at one time during the run time of your application will be 2.
