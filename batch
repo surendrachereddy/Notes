@@ -23,3 +23,7 @@ then the application will create 2 new threads with 50000 items to process for e
 And only when the first thread of this 2 is terminate then the taskExecutor will destroy it and create a new one with the next 50000 items to process
 and keep going like that until the 100000 items be proceed. 
 But the maximum number of thread executed at one time during the run time of your application will be 2.
+
+
+https://github.com/pyramesh/Spring-Rest-SpringBatch-Parallelprocessing/blob/master/HotelAmenitieService/src/main/java/com/ramesh/batch/SpringBatchConfig.java
+https://github.com/abvashis/SpringBootBatchParallel
